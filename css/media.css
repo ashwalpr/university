@@ -16,12 +16,16 @@
   /* header nav {
     display: none;
   } */
+  header.active {
+    background: #222;
+    display: block;
+  }
   header .wrapper>img {
     display: none;
   }
   header nav{
     left: 0;
-    position: ABSOLUTE;
+    position: absolute;
     width: 100%;
     top: 100%;
   }
@@ -85,6 +89,7 @@
     header .mobile button span:last-child {
       margin: 0;
     }
+
 
     /************************* banner ****************/
   .banner .wrapper  {
@@ -331,6 +336,7 @@
   }
   .signup .email {
     width: 100%;
+  }
   /**************** footer-top ****************/
   .footer-top .wrapper .height {
     float: none;
@@ -339,7 +345,21 @@
   .footer-top .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+  .footer-top .wrapper .inner a img {
+    width: 129px;
+    height: 24.63px;
+  }
+  .footer-top .wrapper .inner {
+    width: 100%;
+  }
+  .footer-top .wrapper .height {
+    width: 100%;
+  }
+  .footer-top .popular {
+    display: none;
+  }
+  .footer-top .inner p {
+    width: 100%;
   }
 }

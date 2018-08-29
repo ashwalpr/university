@@ -27,7 +27,6 @@ document.getElementById('toggleMobileNav').addEventListener('click',function() {
           numbers
 *****************************/
 var numbers = document.getElementsByClassName('number');
- console.log(numbers)
   var numberArray = [];
   for(var i = 0; i < numbers.length; i++) {
     numberArray.push(parseInt(numbers[i].innerHTML));
