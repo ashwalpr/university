@@ -13,10 +13,43 @@
     background-color: #ffffff;
     padding: 10px 0;
   }
-  header nav {
+  /* header nav {
+    display: none;
+  } */
+  header .wrapper>img {
     display: none;
   }
-  header .wrapper>img {
+  header nav{
+    left: 0;
+    position: ABSOLUTE;
+    width: 100%;
+    top: 100%;
+  }
+  header nav ul {
+      height: 0;
+      overflow: hidden;
+      background: white;
+      transition: all 1s ease;
+    }
+  header nav ul.open {
+      height: 266px;
+      display: block;
+    }
+  header nav ul li {
+    float: none;
+    display: block;
+    margin: 0;
+  }
+  header nav ul li a {
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    padding: 10px 0px;
+    padding-left: 15px;
+  }
+  header nav ul li:last-child {
     display: none;
   }
   header .mobile .contain img {
@@ -87,7 +120,7 @@
 
   /***************** popular-courses *************/
   .popular-courses {
-    padding-top: 35px 0;
+    padding: 35px 0 35px 0;
   }
   .popular-courses .post-slider {
     flex-flow: column;
@@ -120,10 +153,11 @@
     justify-content: center;
     align-items: center;
   }
-  .statistics .wrapper .inner {
+  .statistics .all-inner .wrapper .inner {
     margin: 0;
     padding: 0;
     margin-bottom: 50px;
+    width: 200px;
   }
   .statistics .wrapper .inner:first-child {
     padding-top: 35px;
@@ -232,30 +266,71 @@
   }
   .training .wrapper>img {
     float: none;
+    margin-right: 0;
+    margin-bottom: 13px;
   }
   .training .wrapper .coaching {
     float: none;
     max-width: 300px;
     text-align: center;
   }
+  .training .coaching h4 {
+    font-size: 21px;
+  }
   .training .wrapper .timer {
     float: none;
+    margin-top: 41px;
+  }
+  .training .sign-now p {
+    margin-bottom: 15px;
+  }
+  /***************** people-say ***********/
+  .people-say .say h3 {
+    font-size: 22px;
+  }
+  .people-say .say p {
+    font-size: 17px;
   }
 
   /*************** news ****************/
+  .news .wrapper {
+    padding: 35px 0 25px 0;
+  }
+  .news .header {
+    margin-bottom: 10px;
+  }
+  .news .header h3 {
+    font-size: 22px;
+  }
   .news .block {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
+  .news .inner {
+    border-radius: 4px;
+  }
+  .news .inner .texts h5 {
+    font-size: 16px;
+  }
   /**************** signup *****************/
   .signup .wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  .signup .wrapper .sign {
+    max-width: 555px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .signup .wrapper .sign .heading {
+    max-width: 282px;
+  }
+  .signup .email {
+    width: 100%;
   /**************** footer-top ****************/
   .footer-top .wrapper .height {
     float: none;

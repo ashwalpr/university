@@ -13,10 +13,11 @@
 
     <!-- header -->
     <header id="mainHeader">
+
       <div class="wrapper flex">
         <img src="img/logo.png" alt="logo" height="34px">
         <nav>
-          <ul class="cf">
+          <ul class="cf" id="mainnav">
             <li><a href="#">HOME</a></li>
             <li><a href="#">COURSES</a></li>
             <li><a href="#">EVENTS</a></li>
@@ -32,7 +33,7 @@
         <div class="contain flex">
           <img src="img/logo-dark.png" alt="logo" width="129px" height="24.63px">
           <div class="flex blocks">
-            <button type="button" name="button">
+            <button type="button" name="button"  id="toggleMobileNav">
               <span></span>
               <span></span>
               <span></span>
@@ -343,7 +344,23 @@
             <h2>Search For Course</h2>
           </div>
           <div class="form flex">
-            <a href="#">
+            <select class="mySelect">
+              <option class="catego">Category1</option>
+              <option class="catego">Category2</option>
+              <option class="catego">category3</option>
+            </select>
+            <select class="mySelect">
+              <option>Category1</option>
+              <option>Category2</option>
+              <option>category3</option>
+            </select>
+            <select class="mySelect">
+              <option>Category1</option>
+              <option>Category2</option>
+              <option>category3</option>
+            </select>
+
+            <!-- <a href="#">
               <div class="input flex">
                 <span>Category</span>
                 <div class="down-arrow"></div>
@@ -360,7 +377,7 @@
                 <span>Category</span>
                 <div class="down-arrow"></div>
               </div>
-            </a>
+            </a> -->
             <button type="button">SEARCH</button>
           </div>
         </div>
@@ -538,26 +555,38 @@
           <div class="popular height">
             <h2 class="main">POPULAR COURSES</h2>
             <ul>
-              <li class="flex">
-                <img src="img/img20.jpg" alt="mobile">
-                <div class="writing">
-                  <p>Introduction To Mobile Apps Development</p>
-                  <p class="blue">$99.00</p>
-                </div>
+              <li>
+                <a href="#" class="flex">
+                  <div class="shadow">
+                    <img src="img/img20.jpg" alt="mobile">
+                  </div>
+                  <div class="writing">
+                    <p>Introduction To Mobile Apps Development</p>
+                    <p class="blue">$99.00</p>
+                  </div>
+                </a>
               </li>
-              <li class="flex">
-                <img src="img/img21.jpg" alt="screen">
-                <div class="writing">
-                  <p>Become A Professional For Maker</p>
-                  <p class="green">FREE</p>
-                </div>
+              <li>
+                <a href="#" class="flex">
+                  <div class="shadow">
+                    <img src="img/img21.jpg" alt="screen">
+                  </div>
+                  <div class="writing">
+                    <p>Become A Professional For Maker</p>
+                    <p class="green">FREE</p>
+                  </div>
+                </a>
               </li>
-              <li class="flex">
-                <img src="img/img22.jpg" alt="screen">
-                <div class="writing">
-                  <p>Swift Programming For Beginners</p>
-                  <p class="blue">$75.00</p>
-                </div>
+              <li>
+                <a href="#" class="flex">
+                  <div class="shadow">
+                    <img src="img/img22.jpg" alt="screen">
+                  </div>
+                  <div class="writing">
+                    <p>Swift Programming For Beginners</p>
+                    <p class="blue">$75.00</p>
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
