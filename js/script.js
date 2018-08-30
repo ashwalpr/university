@@ -1,10 +1,9 @@
 /********************************
-    update header on scroll
+update header on scroll
 *********************************/
 var mainHeader = document.getElementById('mainHeader');
 
 window.addEventListener('scroll', function() {
-  console.log('scrolling');
   if(window.scrollY > 100) {
     mainHeader.classList.add('active');
   } else {
@@ -13,7 +12,7 @@ window.addEventListener('scroll', function() {
 });
 
 /**************************************
-                  toggle
+toggle
 **************************************/
 document.getElementById('toggleMobileNav').addEventListener('click',function() {
   if(document.getElementById('mainnav').classList.contains('open')){
@@ -21,36 +20,35 @@ document.getElementById('toggleMobileNav').addEventListener('click',function() {
   } else {
     document.getElementById('mainnav').classList.add('open');
   }
-})
+});
 
 /*****************************
-          numbers
+numbers
 *****************************/
+var numberEl = document.getElementsByClassName('statistics')[0];
 var numbers = document.getElementsByClassName('number');
-  var numberArray = [];
-  for(var i = 0; i < numbers.length; i++) {
-    numberArray.push(parseInt(numbers[i].innerHTML));
-  }
-  var time = 4;
-  var startNo = 0;
-  for(var i = 0; i < numbers.length; i++) {
-    numbers[i].innerHTML = 0;
-  }
-  var incArray = [];
-  for(var i = 0; i < numbers.length; i++) {
-    incArray.push(parseInt(Math.ceil(numberArray[i]/250)));
-  }
-  var startArray = [];
-  for(var i = 0; i < numbers.length; i++) {
-    startArray.push(0);
-  }
-  var statusArray = [];
-  for(var i = 0; i < numbers.length; i++) {
-    statusArray.push(false);
-  }
-  console.log(numberArray, incArray, startArray)
+var time = 4;
+var isNumberUpdated = false;
 
+var incArray = [];
+var startArray = [];
+var statusArray = [];
+var numberArray = [];
+
+for(var i = 0; i < numbers.length; i++) {
+  numberArray.push(parseInt(numbers[i].innerHTML));
+  numbers[i].innerHTML = 0;
+}
+
+for(var i = 0; i < numbers.length; i++) {
+  incArray.push(parseInt(Math.ceil(numberArray[i]/250)));
+  startArray.push(0);
+  statusArray.push(false);
+}
+
+function incNumber() {
   var count = 0;
+  isNumberUpdated = true;
   var updateNumbers = setInterval(function() {
     for(var i = 0; i < numbers.length; i++) {
       if(statusArray[i] == false) {
@@ -60,28 +58,33 @@ var numbers = document.getElementsByClassName('number');
 
       if(startArray[i] >= numberArray[i]) {
         statusArray[i] = true;
-        console.log(statusArray)
       }
     }
+
     for(var i = 0; i < statusArray.length; i++) {
       if(statusArray[i] == true) {
         ++count;
       }
     }
+
     if(count == 4) {
       clearInterval(updateNumbers)
     } else {
       count = 0;
     }
-
   }, time);
+}
 
-
-
-
+window.addEventListener('scroll', function() {
+  var pos = numberEl.getBoundingClientRect().top;
+  console.log(pos)
+  if(pos < 380 && isNumberUpdated == false) {
+    incNumber();
+  }
+})
 
 /********************************
-    timer logic
+timer logic
 *********************************/
 var daysEl = document.getElementById('days');
 var hoursEl = document.getElementById('hours');
@@ -90,7 +93,7 @@ var secondsEl = document.getElementById('seconds');
 
 function showDiff() {
   var pastDate = new Date();
-  var futureDate = new Date("2018/08/29 14:11:30")
+  var futureDate = new Date("2018/09/10 10:30:00")
 
   // diff in seconds
   var diff = Math.floor((futureDate - pastDate) / 1000);

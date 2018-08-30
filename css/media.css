@@ -16,10 +16,6 @@
   /* header nav {
     display: none;
   } */
-  header.active {
-    background: #222;
-    display: block;
-  }
   header .wrapper>img {
     display: none;
   }
