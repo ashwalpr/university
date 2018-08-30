@@ -374,7 +374,7 @@
     margin-top: 30px;
   }
   .footer-bottom  .wrapper {
-    display: flex;
+    flex-flow: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -384,5 +384,8 @@
   .footer-bottom  .wrapper .social-media li {
     float: none;
     display: inline-block;
+  }
+  .footer-bottom  .wrapper p {
+    margin-top: 20px;
   }
 }
