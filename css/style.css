@@ -56,6 +56,41 @@ header nav ul li a:hover {
   transition: .4s ease;
   color: #34c7dc;
 }
+header nav ul .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header nav ul .dropdown-content {
+  border-top: 3px solid #ffc000;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 20px;
+}
+
+header nav ul .dropdown-content a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #777777;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul .dropdown-content a:hover {
+  background-color: #ffc000;
+  color: #fff;
+}
+
+header nav ul .dropdown:hover .dropdown-content {
+  display: block;
+  transition: 1s;
+}
+
 header .mobile {
   display: none;
 }
@@ -100,10 +135,33 @@ header .mobile {
   text-decoration: none;
   margin-bottom: 5px;
 }
+.banner .wrapper .inner .button .our-courses span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.banner .wrapper .inner .button .our-courses span:after {
+  content: '\00bb';
+  font-family: arial;
+  font-size: 22px;
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -20px;
+  transition: 0.5s;
+}
 .banner .wrapper .inner .button .our-courses:hover {
   transition: .4s ease;
   background-color: #CC9A00;
   border-color: #CC9A00;
+}
+.banner .wrapper .inner .button .our-courses:hover span {
+  padding-right: 20px;
+}
+.banner .wrapper .inner .button .our-courses:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 .banner .wrapper .inner .button .contact-us {
   display: inline-block;
@@ -116,10 +174,33 @@ header .mobile {
   text-decoration: none;
   margin-left: -10px;
 }
+.banner .wrapper .inner .button .contact-us span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.banner .wrapper .inner .button .contact-us span:after {
+  content: '\00bb';
+  font-family: arial;
+  font-size: 22px;
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -20px;
+  transition: 0.5s;
+}
 .banner .wrapper .inner .button .contact-us:hover {
   transition: .4s ease;
   background-color: #D9D9D9;
   border-color: #D9D9D9;
+}
+.banner .wrapper .inner .button .contact-us:hover span {
+  padding-right: 20px;
+}
+.banner .wrapper .inner .button .contact-us:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 .banner .button .our-courses {
   font-family: 'Open Sans', sans-serif;
@@ -156,13 +237,40 @@ header .mobile {
 .banner .features .image {
   margin-right: 20px;
 }
+.banner .features .turn1:hover .image img {
+  transform: rotateY(540deg);
+  transition: all 0.4s linear;
+}
+.banner .features .turn2:hover .image img {
+  transform: rotateY(540deg);
+  transition: all 0.4s linear;
+}
+.banner .features .turn3:hover .image img {
+  transform: rotateY(540deg);
+  transition: all 0.4s linear;
+}
 .banner .features .content {
   display: block;
 }
-.banner .features .content h2 span{
+.banner .features .content h2 span {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+.banner .features .turn1:hover .content h2 span {
+  position: relative;
+  padding-left: 5px;
+  transition: all 0.4s linear;
+}
+.banner .features .turn2:hover .content h2 span {
+  position: relative;
+  padding-left: 5px;
+  transition: all 0.4s linear;
+}
+.banner .features .turn3:hover .content h2 span {
+  position: relative;
+  padding-left: 5px;
+  transition: all 0.4s linear;
 }
 .banner .features {
   margin-top: 68px;
@@ -571,9 +679,15 @@ header .mobile {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: relative;
+
+
 }
-.search .form select:before {
+.search .form .selected {
+  position: relative;
+  z-index: 99;
+
+}
+.search .form .selected:after {
   content: "";
   border: solid black ;
   border-width: 0 2px 2px 0;
@@ -652,6 +766,48 @@ header .mobile {
 }
 .services a .align {
   text-align: center;
+}
+.services .round1:hover .align img {
+  transform: rotateY(360deg);
+  transition: all 0.4s linear;
+}
+.services .round1:hover .align p {
+  font-size: 17px;
+}
+.services .round2:hover .align img {
+  transform: rotateY(360deg);
+  transition: all 0.4s linear;
+}
+.services .round2:hover .align p {
+  font-size: 17px;
+}
+.services .round3:hover .align img {
+  transform: rotateY(360deg);
+  transition: all 0.4s linear;
+}
+.services .round3:hover .align p {
+  font-size: 17px;
+}
+.services .round4:hover .align img {
+  transform: rotateY(360deg);
+  transition: all 0.4s linear;
+}
+.services .round4:hover .align p {
+  font-size: 17px;
+}
+.services .round5:hover .align img {
+  transform: rotateY(360deg);
+  transition: all 0.4s linear;
+}
+.services .round5:hover .align p {
+  font-size: 17px;
+}
+.services .round6:hover .align img {
+  transform: rotateY(360deg);
+  transition: all 0.4s linear;
+}
+.services .round6:hover .align p {
+  font-size: 17px;
 }
 
 /*********************** training *********************/
@@ -1019,15 +1175,19 @@ header .mobile {
   list-style: none;
 }
 .footer-top .popular ul li{
-  max-width: 262.5px;
+  width: 262.5px;
   height: 60px;
   margin-bottom: 30px;
 }
 .footer-top .popular ul li a {
   width: 100%;
 }
-.footer-top .popular ul li .shadow:after {
+.footer-top .popular ul li .shadow {
   position: relative;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
 }
 .footer-top .popular ul li .shadow:after {
   position: absolute;
@@ -1043,9 +1203,13 @@ header .mobile {
 }
 .footer-top .popular ul  li a:hover .shadow:after {
   transform: translateY(0);
+
 }
 .footer-top .popular ul li img {
-  margin-right: 20px;
+  display: block;
+}
+.footer-top .popular ul li .writing {
+  width: 182.5px;
 }
 .footer-top .popular ul li .writing p {
   font-family: 'Lato', sans-serif;
@@ -1054,7 +1218,7 @@ header .mobile {
   color: #777777;
   line-height: 1.28571;
 }
-.footer-top .popular ul li .writing p:hover {
+.footer-top .popular ul li:hover .writing p {
   transition: .4s ease;
   color: #34c7dc;
 }

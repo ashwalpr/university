@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
 
@@ -18,12 +19,54 @@
         <img src="img/logo.png" alt="logo" height="34px">
         <nav>
           <ul class="cf" id="mainnav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">COURSES</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">PAGES</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">HOME</a>
+              <div class="dropdown-content">
+                <a href="#">Home 1</a>
+                <a href="#">Home 2</a>
+                <a href="#">Home 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">COURSES</a>
+              <div class="dropdown-content">
+                <a href="#">Course 1</a>
+                <a href="#">Course 2</a>
+                <a href="#">Course 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">EVENTS</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">PAGES</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">BLOG</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">SHOP</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#"><i class="fas fa-search"></i></a></li>
           </ul>
@@ -52,13 +95,13 @@
             <h2>Education & Training<br>Organization</h2>
             <p>We offer the most complete course pakage in the country, for the<br>research, design and development of Education</p>
             <div class="button">
-              <a class="our-courses" href="#">OUR COURSES</a>
-              <a class="contact-us" href="#">CONTACT US</a>
+              <a class="our-courses" href="#"><span>OUR COURSES</span></a>
+              <a class="contact-us" href="#"><span>CONTACT US</span></a>
             </div>
           </div>
 
           <div class="features cf">
-            <a href="#" class="flex">
+            <a href="#" class="flex turn1">
               <div class="image">
                 <img src="img/icon01.svg" alt="trophy" height="43px" width="44px">
               </div>
@@ -67,7 +110,7 @@
                 <span>VIEW MORE</span></h2>
               </div>
             </a>
-            <a href="#" class="flex">
+            <a href="#" class="flex turn2">
               <div class="image">
                 <img src="img/icon02.svg" alt="trophy" height="39px" width="43px">
               </div>
@@ -76,7 +119,7 @@
                 <span>VIEW MORE</span></h2>
               </div>
             </a>
-            <a href="#" class="flex">
+            <a href="#" class="flex turn3">
               <div class="image">
                 <img src="img/icon03.svg" alt="trophy" height="39px" width="43px">
               </div>
@@ -343,22 +386,29 @@
           <div class="heading">
             <h2>Search For Course</h2>
           </div>
+
           <div class="form flex">
-            <select class="mySelect">
-              <option class="catego">Category1</option>
-              <option class="catego">Category2</option>
-              <option class="catego">category3</option>
-            </select>
-            <select class="mySelect">
-              <option>Category1</option>
-              <option>Category2</option>
-              <option>category3</option>
-            </select>
-            <select class="mySelect">
-              <option>Category1</option>
-              <option>Category2</option>
-              <option>category3</option>
-            </select>
+            <div class="selected">
+              <select class="mySelect">
+                <option class="catego">Category1</option>
+                <option class="catego">Category2</option>
+                <option class="catego">category3</option>
+              </select>
+            </div>
+            <div class="selected">
+              <select class="mySelect">
+                <option>Category1</option>
+                <option>Category2</option>
+                <option>category3</option>
+              </select>
+            </div>
+            <div class="selected">
+              <select class="mySelect">
+                <option>Category1</option>
+                <option>Category2</option>
+                <option>category3</option>
+              </select>
+            </div>
 
             <!-- <a href="#">
               <div class="input flex">
@@ -386,37 +436,37 @@
       <!-- services -->
       <div class="services">
         <div class="wrapper flex">
-          <a href="#">
+          <a href="#" class="round1">
             <div class="align">
               <span><img src="img/icon04.svg" alt="business" width="43px" height="43px"></span>
               <p>BUSINESS</p>
             </div>
           </a>
-          <a href="#">
-            <div class="align">
+          <a href="#" class="round2">
+            <div class="align round2">
               <img src="img/icon05.svg" alt="language" width="44px" height="44px">
               <p>LANGUAGE</p>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="round3">
             <div class="align">
               <img src="img/icon06.svg" alt="programing" width="51px" height="42px">
               <p>PROGRAMMING</p>
             </div>
           </a>
-          <a href="#">
+          <a href="#"  class="round4">
             <div class="align">
               <img src="img/icon07.svg" alt="film" width="51px" height="42px">
               <p>FILM & VIDEO</p>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="round5">
             <div class="align">
               <img src="img/icon08.svg" alt="photography" width="51px" height="39px">
               <p>PHOTOGRAPHY</p>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="round6">
             <div class="align">
               <img src="img/icon09.svg" alt="webdesign" width="51px" height="51px">
               <p>WEB DESIGN</p>
