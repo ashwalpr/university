@@ -9,6 +9,7 @@
     display: block;
     justify-content: space-between;
   }
+
   header {
     background-color: #ffffff;
     padding: 10px 0;
@@ -61,6 +62,9 @@
     margin-right: 15px;
     color: #222222;
   }
+  header.active .mobile .contain i {
+    color: #ffffff;
+  }
   header .mobile .blocks {
     justify-content: flex-end;
   }
@@ -71,7 +75,9 @@
     background-color: transparent;
     margin-right: 9px;
   }
-
+  header.active .mobile .blocks button {
+    border: 1px solid #fff;
+  }
   header .mobile button span {
     display: block;
     width: 22px;
@@ -80,11 +86,27 @@
     background-color: #222222;
     margin-bottom: 4px;
   }
+  header.active .mobile button span {
+    background-color: #fff;
+  }
   header .mobile button span:last-child {
     margin: 0;
   }
-
-
+  header .wrapper img.act {
+    display: block;
+  }
+  header.wrapper img.inact {
+    display: none;
+  }
+  header .mobile img.white {
+    display: none;
+  }
+  header.active .mobile .contain img {
+    display: none;
+  }
+  header.active .mobile img.white {
+    display: block;
+  }
     /************************* banner ****************/
   .banner .wrapper  {
     margin-left: 0;
@@ -121,17 +143,24 @@
   .popular-courses {
     padding: 35px 0 35px 0;
   }
-  .popular-courses .post-slider {
+  /* .popular-courses .post-slider {
     flex-flow: column;
     justify-content: center;
+  } */
+  .popular-courses .center {
+    width: auto;
   }
   .popular-courses .post-slider .course {
     margin: 0px;
-    width: ;
+    display: block;
+    /* width: 100%; */
   }
-s  .popular-courses .arrow {
+  .popular-courses .post-slider .course.active {
+    display: block;
+  }
+  /* .popular-courses .arrow {
     display: none;
-  }
+  } */
   .popular-courses .heading {
     display: flex;
   }
@@ -172,9 +201,17 @@ s  .popular-courses .arrow {
   .popular-courses .mobile-btn {
     display: block;
   }
-  .popular-courses .mobile-btn .post-slider .course {
+  .popular-courses .post-slider .course {
     width: 100%;
-    margin-bottom: 30px;
+  }
+  .popular-courses .center {
+    width: auto;
+  }
+  .popular-courses .post-slider .course {
+    display: none;
+  }
+  .popular-courses .post-slider .course .active {
+    display: block;
   }
   /**************** statistics ********************/
   .statistics .all-inner {
@@ -416,5 +453,9 @@ s  .popular-courses .arrow {
   }
   .footer-bottom  .wrapper p {
     margin-top: 20px;
+  }
+
+  .signup .sign {
+    width: 100%;
   }
 }
