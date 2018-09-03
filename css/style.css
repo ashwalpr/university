@@ -90,7 +90,6 @@ header nav ul .dropdown:hover .dropdown-content {
   display: block;
   transition: 1s;
 }
-
 header .mobile {
   display: none;
 }
@@ -277,6 +276,22 @@ header .mobile {
 }
 
 /******************* popular-courses ***************************/
+.center {
+    /* float: left; */
+    width: 1142px;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* margin: 1px; */
+    overflow: auto;
+    /*will change this to hidden later to deny scolling to user*/
+    /* white-space: nowrap; */
+  }
+  .internal {
+      width: 40%;
+      height: 100%;
+      /* border: 1px solid black; */
+      /* display: inline-block; */
+    }
 .popular-courses {
   padding: 94px 0 60px 0;
   margin-bottom: 100px;
@@ -290,7 +305,11 @@ header .mobile {
 }
 .popular-courses .wrapper .heading .arrow .right-slider {
   float: left;
+}
+.popular-courses .wrapper .heading .arrow .right-slider a {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #e8e8e8;`
   font-size: 22px;
   width: 34px;
@@ -299,17 +318,24 @@ header .mobile {
   font-weight: 900;
   color: #777777;
   background-color: transparent;
-  justify-content: center;
-  align-items: center;
   margin-left: 7px;
 }
+.popular-courses .wrapper .heading .arrow .right-slider a:hover {
+  background-color: #34C7DC;
+  color: #fff;
+  transition: .4s ease;
+  font-size: 23px;
+}
 .popular-courses .wrapper {
+  overflow: hidden;
 }
 .popular-courses .post-slider {
   padding-top: 36px;
+  /* width: 2036px; */
+  overflow: hidden;
 }
 .popular-courses .post-slider .course {
-  width: calc(25% - 22.5px);
+  width: 263px;
   height: 100%;
   display: block;
   margin-right: 15px;
@@ -376,8 +402,11 @@ header .mobile {
   line-height: 1.29412;
   display: block;
   margin-bottom: 7px;
+
 }
 .popular-courses .post-slider .course .texts .alignment h3 a {
+  display: block;
+  width: 223px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -439,6 +468,7 @@ header .mobile {
   line-height: 1;
   color: #777777;
 
+
 }
 .popular-courses .post-slider .course .texts .views .ratings i{
   float: right;
@@ -446,6 +476,10 @@ header .mobile {
   font-size: 11px;
   margin: 0 1px;
 }
+.popular-courses .wrapper .mobile-btn {
+  display: none;
+}
+
 
 /***************** statistics ***********************/
 
@@ -505,7 +539,7 @@ header .mobile {
 /******************** events **********************/
 .events {
   padding-top: 80px;
-  padding-bottom: 123px;
+  padding-bottom: 55px;
 }
 .events .align {
   margin-bottom: 28px;
@@ -554,6 +588,11 @@ header .mobile {
   color: #222222;
   background-color: #fff;
   float: right;
+}
+.events .align a:hover {
+  background-color: #FFC000;
+  border-color: #FFC000;
+  color: #fff;
 }
 .events ul {
   list-style: none;
@@ -652,7 +691,7 @@ header .mobile {
 
 /********************** search *******************/
 .search {
-  background-color: #f6f6f6;
+  background-color: #d6d3cb;
 }
 .search .wrapper{
   padding: 66px 0px 70px 0px;
@@ -685,20 +724,19 @@ header .mobile {
 .search .form .selected {
   position: relative;
   z-index: 99;
-
 }
 .search .form .selected:after {
   content: "";
-  border: solid black ;
+  border: solid #999999;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg) translateX(-50%);
   margin-top: -2px;
   width: 10px;
   height: 10px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   bottom: auto;
-  left: 50%;
+  left: 92%;
   right: auto;
   z-index: 299;
 }
@@ -932,7 +970,7 @@ header .mobile {
 /****************** people say ********************/
 .people-say {
   background-image: url(../img/bg-pattern01.png);
-  background-color: #f6f6f6;
+  background-color: #000;
 }
 .say {
   /* height: 466px; */
@@ -943,7 +981,7 @@ header .mobile {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  color: #222222;
+  color: #d1cfcf;
   margin-bottom: 28px;
 }
 .people-say .say p {
@@ -967,13 +1005,16 @@ header .mobile {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: #222222;
+  color: #d1cfcf;
 }
 .people-say .say p span {
   color: #777777;
 }
 
 /*********************** news **********************/
+.news {
+  background-color: #e8e5de;
+}
 .news .wrapper {
   padding-top: 91px;
   padding-bottom: 70px;
@@ -999,9 +1040,9 @@ header .mobile {
   margin-bottom: 13px;
 }
 .news .inner {
-  box-shadow: inset 0 0 0 1px #e8e8e8;
+  box-shadow: inset 0 0 0 1px #aeaeae;
   width: 359px;
-  height: 429px;
+  height: 429px;232, 232, 232
   border-radius: 2px;
   margin-bottom: 30px;
   border-bottom: 2px solid transparent;
@@ -1009,6 +1050,7 @@ header .mobile {
 .news .inner:hover {
   transition: .4s ease;
   border-color: #FFC000;
+  box-shadow: 0 1px 16px 1px #777;
 }
 .news .inner .texts {
   padding: 0 30px 0 30px;

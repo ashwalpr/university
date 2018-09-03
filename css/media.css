@@ -39,6 +39,7 @@
     float: none;
     display: block;
     margin: 0;
+    width: 100%;
   }
   header nav ul li a {
     color: #222222;
@@ -129,7 +130,7 @@
   }
   .popular-courses .post-slider .course {
     margin: 0px;
-    width: 100%;
+    width: ;
   }
   .popular-courses .post-slider .course:first-child {
     /* margin-left: 0; */
@@ -144,7 +145,44 @@
   .popular-courses .wrapper .heading>h2 {
     font-size: 22px;
   }
-
+  .popular-courses .wrapper .mobile-btn {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .popular-courses .wrapper .arrow .right-slider {
+    float: left;
+  }
+  .popular-courses .wrapper .arrow .right-slider a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8e8e8;`
+    font-size: 22px;
+    width: 34px;
+    height: 34px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #777777;
+    background-color: transparent;
+    margin-left: 7px;
+  }
+  .popular-courses .wrapper .arrow .right-slider a:hover {
+    background-color: #34C7DC;
+    color: #fff;
+    transition: .4s ease;
+  }
+  .popular-courses .wrapper .desktop {
+    display: none;
+  }
+  .popular-courses .mobile-btn {
+    display: block;
+  }
+  .popular-courses .mobile-btn .post-slider .course {
+    width: 100%;
+    margin-bottom: 30px;
+  }
   /**************** statistics ********************/
   .statistics .all-inner {
     background-position: right;
@@ -236,7 +274,9 @@
     justify-content: center;
     align-items: center;
   }
-
+  .search .form .selected {
+    margin-bottom: 20px;
+  }
   /***************** services ******************/
   .services .wrapper {
     flex-wrap: wrap;

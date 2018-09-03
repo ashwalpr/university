@@ -22,12 +22,32 @@ document.getElementById('toggleMobileNav').addEventListener('click',function() {
   }
 });
 
+/****************************************
+        slider div
+******************************************/
+
+$('#right-button').click(function(event) {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=293px"
+  }, "slow");
+});
+
+$('#left-button').click(function(event) {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=293px"
+  }, "slow");
+});
+
+
+
 /*****************************
 numbers
 *****************************/
 var numberEl = document.getElementsByClassName('statistics')[0];
 var numbers = document.getElementsByClassName('number');
-var time = 4;
+var time = 6;
 var isNumberUpdated = false;
 
 var incArray = [];
