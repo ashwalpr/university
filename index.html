@@ -15,7 +15,6 @@
 
     <!-- header -->
     <header id="mainHeader">
-
       <div class="wrapper flex">
         <img src="img/logo.png" alt="logo" height="34px">
         <nav>
@@ -69,7 +68,16 @@
               </div>
             </li>
             <li><a href="#">CONTACT</a></li>
-            <li><a href="#"><i class="fas fa-search"></i></a>     </li>
+            <li>
+              <!-- <a href="#" class="toggle-search"><i class="fas fa-search"></i></a> -->
+              <a href="#">
+                <div class="search-wrap">
+                  <i class="fas fa-search" id="searchIcon"></i>
+                  <input type="text" id="search">
+                  <i id="clear" class="material-icons">clear</i>
+                </div>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -147,12 +155,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="left">
-            <button >swipe left</button>
-          </div>
-          <div class="right">
-            <button>swipe right</button>
-          </div> -->
           <div id="content" class="post-slider flex center desktop">
             <div class="course internal">
               <div class="bg-img">
@@ -578,7 +580,6 @@
             </div>
             <a href="#">VIEW MORE</a>
           </div>
-
           <ul>
             <li class="cf">
               <div class="image">
@@ -635,7 +636,6 @@
           <div class="heading">
             <h2>Search For Course</h2>
           </div>
-
           <div class="form flex">
             <div class="selected">
               <select class="mySelect">
@@ -658,25 +658,6 @@
                 <option>Search Text3</option>
               </select>
             </div>
-
-            <!-- <a href="#">
-              <div class="input flex">
-                <span>Category</span>
-                <div class="down-arrow"></div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="input flex">
-                <span>Category</span>
-                <div class="down-arrow"></div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="input flex">
-                <span>Category</span>
-                <div class="down-arrow"></div>
-              </div>
-            </a> -->
             <button type="button">SEARCH</button>
           </div>
         </div>

@@ -13,9 +13,6 @@
     background-color: #ffffff;
     padding: 10px 0;
   }
-  /* header nav {
-    display: none;
-  } */
   header .wrapper>img {
     display: none;
   }
@@ -26,15 +23,15 @@
     top: 100%;
   }
   header nav ul {
-      height: 0;
-      overflow: hidden;
-      background: white;
-      transition: all 1s ease;
-    }
+    height: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 1s ease;
+  }
   header nav ul.open {
-      height: 266px;
-      display: block;
-    }
+    height: 266px;
+    display: block;
+  }
   header nav ul li {
     float: none;
     display: block;
@@ -83,9 +80,9 @@
     background-color: #222222;
     margin-bottom: 4px;
   }
-    header .mobile button span:last-child {
-      margin: 0;
-    }
+  header .mobile button span:last-child {
+    margin: 0;
+  }
 
 
     /************************* banner ****************/
@@ -132,11 +129,7 @@
     margin: 0px;
     width: ;
   }
-  .popular-courses .post-slider .course:first-child {
-    /* margin-left: 0; */
-  }
-
-  .popular-courses .arrow {
+s  .popular-courses .arrow {
     display: none;
   }
   .popular-courses .heading {

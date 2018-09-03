@@ -1,5 +1,5 @@
 /********************************
-update header on scroll
+    update header on scroll
 *********************************/
 var mainHeader = document.getElementById('mainHeader');
 
@@ -10,9 +10,22 @@ window.addEventListener('scroll', function() {
     mainHeader.classList.remove('active');
   }
 });
-
+/*************************************
+            Search icon
+***************************************/
+document.getElementById('searchIcon').onclick = function() {
+  document.getElementById('search').classList.add("visible");
+  document.getElementById('clear').classList.add("visible");
+  document.getElementById('search').focus();
+  document.getElementById('searchIcon').classList.add("hide");
+}
+document.getElementById('clear').onclick = function() {
+  document.getElementById('searchIcon').classList.remove("hide");
+  document.getElementById('search').classList.remove("visible");
+  document.getElementById('clear').classList.remove("visible");
+}
 /**************************************
-toggle
+                toggle
 **************************************/
 document.getElementById('toggleMobileNav').addEventListener('click',function() {
   if(document.getElementById('mainnav').classList.contains('open')){
@@ -23,9 +36,8 @@ document.getElementById('toggleMobileNav').addEventListener('click',function() {
 });
 
 /****************************************
-        slider div
+                slider div
 ******************************************/
-
 $('#right-button').click(function(event) {
   event.preventDefault();
   $('#content').animate({
@@ -42,12 +54,12 @@ $('#left-button').click(function(event) {
 
 
 
-/*****************************
-numbers
-*****************************/
+/*************************************
+                  numbers
+***************************************/
 var numberEl = document.getElementsByClassName('statistics')[0];
 var numbers = document.getElementsByClassName('number');
-var time = 6;
+var time = 8;
 var isNumberUpdated = false;
 
 var incArray = [];
@@ -103,9 +115,9 @@ window.addEventListener('scroll', function() {
   }
 })
 
-/********************************
-timer logic
-*********************************/
+/******************************************
+              timer logic
+*******************************************/
 var daysEl = document.getElementById('days');
 var hoursEl = document.getElementById('hours');
 var minutesEl = document.getElementById('minutes');
