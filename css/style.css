@@ -53,7 +53,7 @@ header nav ul li a {
   font-size: 13px;
 }
 header nav ul li a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #34c7dc;
 }
 header nav ul .dropdown {
@@ -202,7 +202,7 @@ header .mobile {
   transition: 0.5s;
 }
 .banner .wrapper .inner .button .our-courses:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #CC9A00;
   border-color: #CC9A00;
 }
@@ -241,7 +241,7 @@ header .mobile {
   transition: 0.5s;
 }
 .banner .wrapper .inner .button .contact-us:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #D9D9D9;
   border-color: #D9D9D9;
 }
@@ -359,7 +359,7 @@ header .mobile {
 .popular-courses .wrapper .heading .arrow .right-slider a:hover {
   background-color: #34C7DC;
   color: #fff;
-  transition: .4s ease;
+  transition: .3s ease;
   font-size: 23px;
 }
 .popular-courses .wrapper {
@@ -382,7 +382,7 @@ header .mobile {
   margin-left: 0;
 }
 .popular-courses .post-slider .course:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   box-shadow: inset 0 0 0 1px #34C7DC;
 }
 .popular-courses .post-slider .course:last-child {
@@ -449,7 +449,7 @@ header .mobile {
   color: #222222;
 }
 .popular-courses .post-slider .course .texts .alignment h3 a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #FFC000;
 }
 .popular-courses .post-slider .course .texts .alignment a img {
@@ -471,7 +471,7 @@ header .mobile {
   font-weight: 400;
 }
 .popular-courses .post-slider .course .texts .alignment a p:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #ffc000;
 }
 .popular-courses .post-slider .course .texts .views {
@@ -490,11 +490,11 @@ header .mobile {
   margin-left: 10px;
 }
 .popular-courses .post-slider .course .public .users i:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #34c7dc;
 }
 .popular-courses .post-slider .course .public .users a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #34c7dc;
 }
 .popular-courses .post-slider .course .public .users a {
@@ -703,7 +703,7 @@ header .mobile {
   color: #222222;
 }
 .events ul li .register h5 a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #FFC000;
 }
 .events ul li .register p {
@@ -725,7 +725,7 @@ header .mobile {
   display: inline-block;
 }
 .events ul li .register>a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #FFC000;
   border-color: #FFC010;
   color: #fff;
@@ -797,7 +797,7 @@ header .mobile {
   background-color: #ffc000;
 }
 .search .form button:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #CC9A00;
   border-color: #CC9A10;
 }
@@ -820,7 +820,7 @@ header .mobile {
   border-bottom: 3px solid transparent;
 }
 .services a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   border-color: #FFC000;
 }
 .services p {
@@ -926,7 +926,7 @@ header .mobile {
   border-width: 2px;
 }
 .training .coaching a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #ffc000;
   color: #fff;
   border-color: #ffc010;
@@ -981,10 +981,9 @@ header .mobile {
   color: white;
   margin-left: 15px;
   margin-right: 15px;
-
 }
 .training .sign-now a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #CC9A00;
   border-color: #CC9A10;
 }
@@ -1070,7 +1069,7 @@ header .mobile {
   margin-bottom: 13px;
 }
 .news .inner {
-  box-shadow: inset 0 0 0 1px #aeaeae;
+  box-shadow: inset 0 1px 5px 1px #0000001a;
   width: 359px;
   height: 429px;232, 232, 232
   border-radius: 2px;
@@ -1078,7 +1077,7 @@ header .mobile {
   border-bottom: 2px solid transparent;
 }
 .news .inner:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   border-color: #FFC000;
   box-shadow: 0 1px 16px 1px #777;
 }
@@ -1100,7 +1099,7 @@ header .mobile {
   margin-bottom: 13px;
 }
 .news .inner .texts h5:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #FFC000;
 }
 .news .inner .texts p {
@@ -1116,7 +1115,7 @@ header .mobile {
   font-size: 12px;
 }
 .news .inner .texts p:last-child span:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #FFC000;
 }
 
@@ -1182,7 +1181,7 @@ header .mobile {
   display: block;
 }
 .signup .email button:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #494949;
 }
 .signup .wrapper {
@@ -1226,7 +1225,7 @@ header .mobile {
   display: inline-block;
 }
 .footer-top .inner a:last-child:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   background-color: #777777;
   color: #fff;
 }
@@ -1291,7 +1290,7 @@ header .mobile {
   line-height: 1.28571;
 }
 .footer-top .popular ul li:hover .writing p {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #34c7dc;
 }
 .footer-top .popular ul li .writing .blue {
@@ -1321,7 +1320,7 @@ header .mobile {
   color: #777777
 }
 .footer-top .links ul li a:hover {
-  transition: .4s ease;
+  transition: .3s ease;
   color: #fff;
 }
 .footer-top .links ul {

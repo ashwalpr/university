@@ -53,39 +53,6 @@ $('#left-button').click(function(event) {
   }, "slow");
 });
 
-// /****************************************
-//                 slider-mobile
-// ******************************************/
-// var prevBtn = document.getElementById('prev');
-// var nextBtn = document.getElementById('next');
-//
-// prevBtn.addEventListener('click', updateSlider);
-// nextBtn.addEventListener('click', updateSlider);
-//
-// function updateSlider(event) {
-//   var id = event.target.id;
-//   var currentActiveEl = document.getElementsByClassName('.active');
-//   var lastEl = document.querySelector('div:last-child');
-//   var firstEl = document.querySelector('div:first-child');
-//
-//   if(id == "next") {
-//     if(currentActiveEl == lastEl) {
-//       var nextActiveEl = document.querySelector('div:first-child');
-//     } else {
-//       var nextActiveEl = document.querySelector('.active+div');
-//     }
-//   } else {
-//     if(currentActiveEl == firstEl) {
-//       var nextActiveEl = document.querySelector('div:last-child');
-//     } else {
-//       var nextActiveEl = document.querySelector('.active').previousSibling.previousSibling;
-//     }
-//   }
-//   nextActiveEl.classList.add('temp');
-//   currentActiveEl.classList.remove('active');
-//   nextActiveEl.classList.add('active');
-//   nextActiveEl.classList.remove('temp');
-// }
 /*************************************
                   numbers
 ***************************************/
