@@ -130,7 +130,7 @@ var secondsEl = document.getElementById('seconds');
 
 function showDiff() {
   var pastDate = new Date();
-  var futureDate = new Date("2018/09/10 10:30:00")
+  var futureDate = new Date("2018/10/10 10:30:00")
 
   // diff in seconds
   var diff = Math.floor((futureDate - pastDate) / 1000);
